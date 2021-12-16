@@ -37,6 +37,8 @@ public class Registration extends JFrame {
 
         add(isMature);
 
+        setLocationRelativeTo(null);
+
         submit.addActionListener(e ->{
 
             Application.setMature(isMature.isEnabled());
