@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.lang.Object;import java.util.HashMap;
 
 public class OrderManager {
 
