@@ -4,18 +4,17 @@ import java.awt.*;
 public class Registration extends JFrame {
 
     JLabel titleName1 = new JLabel("First name");
-    JTextField firstName = new JTextField(30);
+    JTextField firstName = new JTextField(20);
 
     JLabel titleName2 = new JLabel("Second name");
-    JTextField secondName = new JTextField(30);
+    JTextField secondName = new JTextField(20);
 
     JLabel titleAddress = new JLabel("Address");
-    JTextField address = new JTextField(30);
+    JTextField address = new JTextField(20);
 
     JCheckBox isMature = new JCheckBox("18+");
 
     JButton submit = new JButton("Submit");
-
 
     Registration(){
         super("Registration");
@@ -37,15 +36,12 @@ public class Registration extends JFrame {
 
         add(isMature);
 
-        setLocationRelativeTo(null);
-
         submit.addActionListener(e ->{
 
-            Application.setMature(isMature.isEnabled());
-            setVisible(false);
-
-        });
-
+                    Application.setMature(isMature.isEnabled());
+                    setVisible(false);
+                }
+        );
 
         titleName1.setForeground(Color.BLUE);
         titleName2.setForeground(Color.BLUE);
