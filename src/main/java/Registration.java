@@ -20,7 +20,7 @@ public class Registration extends JFrame {
     Registration(){
         super("Registration");
 
-        setSize(300, 400);
+        setSize(420, 400);
         setResizable(false);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 
@@ -45,6 +45,25 @@ public class Registration extends JFrame {
             setVisible(false);
 
         });
+
+
+        titleName1.setForeground(Color.BLUE);
+        titleName2.setForeground(Color.BLUE);
+
+        titleAddress.setBackground(Color.LIGHT_GRAY);
+        titleAddress.setForeground(Color.BLUE);
+
+        firstName.setBackground(Color.WHITE);
+        secondName.setBackground(Color.WHITE);
+
+        isMature.setBackground(Color.YELLOW);
+        isMature.setForeground(Color.RED);
+
+        submit.setBackground(Color.GREEN);
+
+        titleName1.setPreferredSize(new Dimension(150, 80));
+        titleName2.setPreferredSize(new Dimension(150, 80));
+        titleAddress.setPreferredSize(new Dimension(150, 80));
 
         add(submit);
         setVisible(true);
